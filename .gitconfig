@@ -1,0 +1,51 @@
+[user]
+	email = jan@kozusznik.cz
+	name = Jan Kožusznik
+	signingkey = B12BC293D134452F
+[push]
+	default = upstream
+[http]
+	postBuffer = 1048576000
+[alias]
+	move-del-ref = !f() { echo $1 && git checkout --track origin/$1 || echo exists $1 && git checkout master && git update-ref refs/heads/$1 refs/heads/$2 && git push origin $1 && git branch -d $1 ; }; f
+	renameref = !f() { git tag $2 origin/$1 && git push origin tag $2 && git push origin :$1 && git tag -d $2&& git branch -d $1 ; }; f
+	restore-file = !f() { git checkout $(git rev-list -n 1 HEAD -- $1)^ -- $1 ; }; f
+	ll = log --pretty=format:%C(yellow)%h%Cred%d\\ %Creset%s%Cblue\\ [%cn]--decorate --numstat
+	replay = !f() { git branch __point $3 && git rebase --onto $1 $2 __point && git checkout $1 && git merge __point && git branch -D __point ; }; f
+	cl = !git clean --dry-run && git clean -f
+[color]
+	ui = auto
+[mergetool]
+	keepBackup = false
+[credential]
+	helper = store
+[.oh-my-git]
+	enabled = true
+[merge]
+	conflictstyle = diff3
+	tool = kdiff3
+[commit]
+	template = /Users/kozusznikj/.gitmessage
+	gpgsign = true
+[filesystem "Oracle Corporation|12.0.2|/dev/nvme0n1p4"]
+	timestampResolution = 9000 nanoseconds
+	minRacyThreshold = 6783 microseconds
+[filesystem "Oracle Corporation|1.8.0_212|/home/koz01/.Private"]
+	timestampResolution = 1039 milliseconds
+	minRacyThreshold = 0 nanoseconds
+[filesystem "Oracle Corporation|1.8.0_212|/dev/nvme0n1p4"]
+	timestampResolution = 1001 milliseconds
+	minRacyThreshold = 0 nanoseconds
+[filesystem "Oracle Corporation|13|/dev/nvme0n1p4"]
+	timestampResolution = 12000 nanoseconds
+	minRacyThreshold = 6983 microseconds
+[filesystem "Oracle Corporation|13.0.1|/dev/nvme0n1p4"]
+	timestampResolution = 7000 nanoseconds
+	minRacyThreshold = 4707 microseconds
+[filesystem "Oracle Corporation|13.0.2|/dev/nvme0n1p4"]
+	timestampResolution = 8000 nanoseconds
+	minRacyThreshold = 5214 microseconds
+[gpg]
+	program = gpg
+[tag]
+	forcesignannotated = false
