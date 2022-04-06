@@ -29,7 +29,7 @@ alias composer="php -d memory_limit=-1 /opt/homebrew/bin/composer"
 
 # JS
 alias nfresh="rm -rf node_modules/ package-lock.json && npm install"
-alias watch="npm run watch"
+# alias watch="npm run watch"
 
 # Docker
 alias docker-composer="docker-compose"

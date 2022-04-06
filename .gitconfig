@@ -47,5 +47,6 @@
 	minRacyThreshold = 5214 microseconds
 [gpg]
 	program = gpg
+	format = openpgp
 [tag]
 	forcesignannotated = false
