@@ -25,26 +25,7 @@
 	conflictstyle = diff3
 	tool = kdiff3
 [commit]
-	template = /Users/kozusznikj/.gitmessage
-	gpgsign = true
-[filesystem "Oracle Corporation|12.0.2|/dev/nvme0n1p4"]
-	timestampResolution = 9000 nanoseconds
-	minRacyThreshold = 6783 microseconds
-[filesystem "Oracle Corporation|1.8.0_212|/home/koz01/.Private"]
-	timestampResolution = 1039 milliseconds
-	minRacyThreshold = 0 nanoseconds
-[filesystem "Oracle Corporation|1.8.0_212|/dev/nvme0n1p4"]
-	timestampResolution = 1001 milliseconds
-	minRacyThreshold = 0 nanoseconds
-[filesystem "Oracle Corporation|13|/dev/nvme0n1p4"]
-	timestampResolution = 12000 nanoseconds
-	minRacyThreshold = 6983 microseconds
-[filesystem "Oracle Corporation|13.0.1|/dev/nvme0n1p4"]
-	timestampResolution = 7000 nanoseconds
-	minRacyThreshold = 4707 microseconds
-[filesystem "Oracle Corporation|13.0.2|/dev/nvme0n1p4"]
-	timestampResolution = 8000 nanoseconds
-	minRacyThreshold = 5214 microseconds
+	gpgsign = false
 [gpg]
 	program = gpg
 	format = openpgp
