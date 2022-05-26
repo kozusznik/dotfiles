@@ -114,7 +114,7 @@ export GPG_TTY=$(tty)
 # Keypad
 # 0 . Enter
 bindkey -s "^[Op" "0"
-bindkey -s "^[Ol" "."
+bindkey -s "^[On" "."
 bindkey -s "^[OM" "^M"
 # 1 2 3
 bindkey -s "^[Oq" "1"
@@ -129,7 +129,7 @@ bindkey -s "^[Ow" "7"
 bindkey -s "^[Ox" "8"
 bindkey -s "^[Oy" "9"
 # + -  * /
-bindkey -s "^[Ok" "+"
+bindkey -s "^[Ol" "+"
 bindkey -s "^[Om" "-"
 bindkey -s "^[Oj" "*"
 bindkey -s "^[Oo" "/"
