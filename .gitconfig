@@ -2,6 +2,7 @@
 	email = jan@kozusznik.cz
 	name = Jan Kožusznik
 	signingkey = B12BC293D134452F
+	signingKey = B12BC293D134452F
 [push]
 	default = upstream
 [http]
@@ -27,7 +28,7 @@
 [commit]
 	gpgsign = true
 [gpg]
-	program = gpg
+	program = /opt/homebrew/bin/gpg
 	format = openpgp
 [tag]
 	forcesignannotated = false
