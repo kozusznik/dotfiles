@@ -25,7 +25,7 @@
 	conflictstyle = diff3
 	tool = kdiff3
 [commit]
-	gpgsign = true
+	gpgSign = true
 [gpg]
 	program = /opt/homebrew/bin/gpg
 	format = openpgp
