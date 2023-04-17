@@ -1,7 +1,7 @@
 [user]
 	email = jan@kozusznik.cz
 	name = Jan Kožusznik
-	signingKey = 600F3518159D664128E044B8B12BC293D134452F
+	signingKey = B12BC293D134452F
 [push]
 	default = upstream
 [http]
