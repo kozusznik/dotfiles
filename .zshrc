@@ -97,7 +97,7 @@ source $ZSH/oh-my-zsh.sh
 # else
 #   export EDITOR='mvim'
 # fi
-export JAVA_HOME=$(/usr/libexec/java_home -v 19.0.1)
+export JAVA_HOME=$(/usr/libexec/java_home -v 20.0.1)
 
 # Compilation flags
 # export ARCHFLAGS="-arch x86_64"
