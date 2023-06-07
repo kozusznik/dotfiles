@@ -1,6 +1,9 @@
 # Load dotfiles binaries
 export PATH="$DOTFILES/bin:$PATH"
 
+# Load homebrew files
+export PATH=/opt/homebrew/bin:$HOME/bin:/opt/apache-maven-3.9.1/bin/:$PATH
+
 # Load Composer tools
 export PATH="$HOME/.composer/vendor/bin:$PATH"
 
