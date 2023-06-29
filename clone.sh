@@ -2,6 +2,9 @@
 
 echo "Cloning repositories..."
 
+git clone https://github.com/kozusznik/bin $SITES/bin
+exit
+
 SITES=$HOME/Sites
 BLADE=$SITES/blade-ui-kit
 LARAVEL=$SITES/laravel
