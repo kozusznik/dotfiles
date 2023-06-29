@@ -1,6 +1,10 @@
 #!/bin/sh
 
-echo "Setting up your Mac..."
+if [[ $(uname) == "Darwin" ]]; then
+  echo "Setting up your Mac..."
+elif
+  echo "Setting up your " $(uname) "..."
+fi
 
 # Check for Oh My Zsh and install if we don't have it
 if test ! $(which omz); then
