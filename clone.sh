@@ -2,7 +2,7 @@
 
 echo "Cloning repositories..."
 
-git clone https://github.com/kozusznik/bin $SITES/bin
+git clone https://github.com/kozusznik/bin $HOME/bin
 exit
 
 SITES=$HOME/Sites
