@@ -1,5 +1,7 @@
 #!/bin/sh
 
+DOTFILES=$HOME/.dotfiles
+
 if [[ $(uname) == "Darwin" ]]; then
   echo "Setting up your Mac..."
 else
