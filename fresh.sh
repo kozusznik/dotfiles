@@ -2,7 +2,7 @@
 
 if [[ $(uname) == "Darwin" ]]; then
   echo "Setting up your Mac..."
-elif
+else
   echo "Setting up your " $(uname) "..."
 fi
 
