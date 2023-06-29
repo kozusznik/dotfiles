@@ -61,8 +61,9 @@ Your Mac is now ready to use!
 > 💡 You can use a different location than `~/.dotfiles` if you want. Make sure you also update the reference in the [`.zshrc`](./.zshrc#L2) file.
 
 ## Automatic installation
+```zsh
 curl https://raw.githubusercontent.com/kozusznik/dotfiles/main/install.sh | sh
-
+```
 
 ## Your Own Dotfiles
 
