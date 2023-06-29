@@ -56,10 +56,8 @@ fi
 # Clone Github repositories
 $DOTFILES/clone.sh
 
-if [[ $(uname) == "Darwin" ]]; then
-  # Symlink the Mackup config file to the home directory
-  ln -s $DOTFILES/.mackup.cfg $HOME/.mackup.cfg
-fi
+# Symlink the Mackup config file to the home directory
+ln -s $DOTFILES/.mackup.cfg $HOME/.mackup.cfg
 
 # Set macOS preferences - we will run this last because this will reload the shell
 #source $DOTFILES/.macos
