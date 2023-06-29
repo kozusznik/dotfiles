@@ -3,4 +3,5 @@
 echo "Clonning"
 
 git clone https://github.com/kozusznik/dotfiles $HOME/.dotfiles
-$HOME/.dotfile/fresh.sh
+$HOME/.dotfiles/fresh.sh
+. $HOME/.zshrc
