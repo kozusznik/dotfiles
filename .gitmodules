@@ -1,2 +1,3 @@
-[submodule "plugins/artisan"]
-	url = https://github.com/jessarcher/zsh-artisan.git
+[submodule "plugins/zsh-autosuggestions"]
+	path = plugins/zsh-autosuggestions
+	url = https://github.com/zsh-users/zsh-autosuggestions
