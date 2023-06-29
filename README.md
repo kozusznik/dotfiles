@@ -60,6 +60,10 @@ Your Mac is now ready to use!
 
 > 💡 You can use a different location than `~/.dotfiles` if you want. Make sure you also update the reference in the [`.zshrc`](./.zshrc#L2) file.
 
+## Automatic installation
+curl https://raw.githubusercontent.com/kozusznik/dotfiles/main/install.sh | sh
+
+
 ## Your Own Dotfiles
 
 **Please note that the instructions below assume you already have set up Oh My Zsh so make sure to first [install Oh My Zsh](https://github.com/robbyrussell/oh-my-zsh#getting-started) before you continue.**
