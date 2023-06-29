@@ -2,7 +2,7 @@
 
 DOTFILES=$HOME/.dotfiles
 
-if [[ $(uname) == "Darwin" ]]; then
+if [ $(uname) = "Darwin" ]; then
   echo "Setting up your Mac..."
 else
   echo "Setting up your " $(uname) "..."
@@ -13,7 +13,7 @@ if test ! $(which omz); then
   /bin/sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/HEAD/tools/install.sh)"
 fi
 
-if [[ $(uname) == "Darwin" ]]; then
+if [ $(uname) = "Darwin" ]; then
   # Check for Homebrew and install if we don't have it
   if test ! $(which brew); then
     /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
@@ -28,7 +28,7 @@ rm -rf $HOME/.zshrc
 ln -s $HOME/.dotfiles/.zshrc $HOME/.zshrc
 
 
-if [[ $(uname) == "Darwin" ]]; then
+if [ $(uname) = "Darwin" ]; then
   # Update Homebrew recipes
   brew update
 
@@ -62,7 +62,7 @@ fi
 # Clone Github repositories
 $DOTFILES/clone.sh
 
-if [[ $(uname) == "Darwin" ]]; then
+if [ $(uname) = "Darwin" ]; then
   # Symlink the Mackup config file to the home directory
   ln -s $DOTFILES/.mackup.cfg $HOME/.mackup.cfg
 fi
