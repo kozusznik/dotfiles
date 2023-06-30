@@ -97,9 +97,9 @@ source $ZSH/oh-my-zsh.sh
 # else
 #   export EDITOR='mvim'
 # fi
-if [[ -e "cesta_k_souboru" ]]; then
+if [[ -f /usr/libexec/java_home ]]; then
     export JAVA_HOME=$(/usr/libexec/java_home -v 20.0.1)
-else
+fi
 
 
 # Compilation flags
