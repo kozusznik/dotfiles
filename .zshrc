@@ -97,7 +97,10 @@ source $ZSH/oh-my-zsh.sh
 # else
 #   export EDITOR='mvim'
 # fi
-export JAVA_HOME=$(/usr/libexec/java_home -v 20.0.1)
+if [[ -e "cesta_k_souboru" ]]; then
+    export JAVA_HOME=$(/usr/libexec/java_home -v 20.0.1)
+else
+
 
 # Compilation flags
 # export ARCHFLAGS="-arch x86_64"
