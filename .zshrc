@@ -3,7 +3,7 @@ export DOTFILES=$HOME/.dotfiles
 
 # If you come from bash you might have to change your $PATH.
 # export PATH=$HOME/bin:/usr/local/bin:$PATH
-export PATH=/opt/homebrew/bin:$HOME/bin:/opt/apache-maven-3.9.1/bin/:$PATH
+# export PATH=/opt/homebrew/bin:$HOME/bin:/opt/apache-maven-3.9.1/bin/:$PATH
 
 # Path to your oh-my-zsh installation.
 export ZSH="$HOME/.oh-my-zsh"
@@ -99,6 +99,10 @@ source $ZSH/oh-my-zsh.sh
 # fi
 if [[ -f /usr/libexec/java_home ]]; then
     export JAVA_HOME=$(/usr/libexec/java_home -v 20.0.1)
+fi
+
+if [[ -d /opt/apache-maven-3.9.3 ]]; then
+    export M2_HOME=/opt/apache-maven-3.9.3
 fi
 
 
