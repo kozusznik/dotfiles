@@ -98,7 +98,7 @@ source $ZSH/oh-my-zsh.sh
 #   export EDITOR='mvim'
 # fi
 if [[ -f /usr/libexec/java_home ]]; then
-    export JAVA_HOME=$(/usr/libexec/java_home -v 20.0.1)
+    export JAVA_HOME=$(/usr/libexec/java_home -v 21)
 fi
 
 if [[ -d /opt/apache-maven-3.9.3 ]]; then
