@@ -13,6 +13,16 @@ export MNML_INSERT_CHAR="$"
 export MNML_PROMPT=(mnml_git mnml_keymap)
 export MNML_RPROMPT=('mnml_cwd 20')
 
+if [[ -f /usr/libexec/java_home ]]; then
+    export JAVA_HOME=$(/usr/libexec/java_home -v 21)
+fi
+ 
+if [[ -d /opt/apache-maven-3.9.6 ]]; then
+   export M2_HOME=/opt/apache-maven-3.9.6
+elif [[ -d /opt/apache-maven-3.9.3 ]]; then
+   export M2_HOME=/opt/apache-maven-3.9.3
+fi
+
 # Set name of the theme to load --- if set to "random", it will
 # load a random theme each time oh-my-zsh is loaded, in which case,
 # to know which specific one was loaded, run: echo $RANDOM_THEME
@@ -97,14 +107,6 @@ source $ZSH/oh-my-zsh.sh
 # else
 #   export EDITOR='mvim'
 # fi
-if [[ -f /usr/libexec/java_home ]]; then
-    export JAVA_HOME=$(/usr/libexec/java_home -v 21)
-fi
-
-if [[ -d /opt/apache-maven-3.9.3 ]]; then
-    export M2_HOME=/opt/apache-maven-3.9.3
-fi
-
 
 # Compilation flags
 # export ARCHFLAGS="-arch x86_64"

@@ -2,7 +2,7 @@
 export PATH="$DOTFILES/bin:$PATH"
 
 # Load homebrew files
-export PATH=/opt/homebrew/bin:$HOME/bin:/opt/apache-maven-3.9.3/bin/:$PATH
+export PATH=/opt/homebrew/bin:$HOME/bin:$M2_HOME/bin/:$PATH
 
 # Load Composer tools
 export PATH="$HOME/.composer/vendor/bin:$PATH"
