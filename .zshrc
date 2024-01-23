@@ -1,3 +1,4 @@
+
 # Path to your dotfiles.
 export DOTFILES=$HOME/.dotfiles
 
@@ -92,6 +93,10 @@ ZSH_CUSTOM=$DOTFILES
 plugins=(git docker docker-compose zsh-autosuggestions)
 
 source $ZSH/oh-my-zsh.sh
+
+if [[ -f $HOME/.zshrc.local ]]; then
+    source $HOME/.zshrc.local
+fi
 
 # User configuration
 
