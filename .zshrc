@@ -151,3 +151,12 @@ bindkey -s "^[Oo" "/"
 # Home-End
 bindkey "\033[1~" beginning-of-line
 bindkey "\033[4~" end-of-line
+
+
+[ -f "/Users/kozusznikj/.ghcup/env" ] && . "/Users/kozusznikj/.ghcup/env" # ghcup-env
+# Added by LM Studio CLI (lms)
+export PATH="$PATH:/Users/kozusznikj/.lmstudio/bin"
+# End of LM Studio CLI section
+
+# Aliases
+alias start_colima='source $(which start_colima.sh)' 
