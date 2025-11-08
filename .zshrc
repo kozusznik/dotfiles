@@ -160,3 +160,6 @@ export PATH="$PATH:/Users/kozusznikj/.lmstudio/bin"
 
 # Aliases
 alias start_colima='source $(which start_colima.sh)' 
+
+#ghcup-env
+[ -f "$HOME/.ghcup/env" ] && . "$HOME/.ghcup/env" 
