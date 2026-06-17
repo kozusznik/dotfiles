@@ -39,3 +39,5 @@
 [gpg "ssh"]
 	program = ssh-keygen
 	allowedSignersFile = ""
+[core]
+	excludesfile = /Users/kozusznikj/.gitignore
