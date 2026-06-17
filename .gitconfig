@@ -18,7 +18,7 @@
 [mergetool]
 	keepBackup = false
 [credential]
-	helper = store
+	helper = osxkeychain
 [.oh-my-git]
 	enabled = true
 [merge]
