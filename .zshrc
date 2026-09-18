@@ -15,7 +15,7 @@ export MNML_PROMPT=(mnml_git mnml_keymap)
 export MNML_RPROMPT=('mnml_cwd 20')
 
 if [[ -f /usr/libexec/java_home ]]; then
-    export JAVA_HOME=$(/usr/libexec/java_home -v 21)
+    export JAVA_HOME=$(/usr/libexec/java_home -v 25)
 fi
  
 #if [[ -d /opt/apache-maven-3.9.6 ]]; then
